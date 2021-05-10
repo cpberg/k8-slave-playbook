@@ -34,6 +34,8 @@
 - name: Installing Kubernetes Cluster Packages.
   yum:
     name:
+      - kubeadm
+      - kubectl
       - kubelet
     state: present
   
